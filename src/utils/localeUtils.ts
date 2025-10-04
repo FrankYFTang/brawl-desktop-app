@@ -3,5 +3,5 @@ export function getLocale(): string {
 }
 
 export function getFirstDayOfWeek(): number {
-  return (new Intl.Locale(getLocale()) as any).weekInfo.firstDay;
+  return (new Intl.Locale(getLocale()) as any).getWeekInfo().firstDay;
 }
